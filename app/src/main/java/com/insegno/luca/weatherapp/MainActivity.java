@@ -8,7 +8,7 @@ import android.util.LogPrinter;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-
+//
 //scrivo a mano
 import android.util.Log;
 //sopra scritto a mano
@@ -39,10 +39,10 @@ public class MainActivity extends AppCompatActivity {
     public void searchCity(View view) {
         String city = ((EditText) findViewById(R.id.city_input)).getText().toString();
 
-        //URL url = new URL("api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=ee95e989b228aa1ea7d1e5a2acf437a8");
-        //URL url = new URL("api.openweathermap.org/data/2.5/weather?q=" + city +"&APPID=ee95e989b228aa1ea7d1e5a2acf437a8");
+        //URL url = new URL("api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=chiave");
+        //URL url = new URL("api.openweathermap.org/data/2.5/weather?q=" + city +"&APPID=chiave");
         try {
-            URL url = new URL("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=ee95e989b228aa1ea7d1e5a2acf437a8");
+            URL url = new URL("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=quicivalachiave");
 
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
